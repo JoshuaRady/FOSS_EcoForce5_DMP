@@ -26,18 +26,13 @@ Our research is meant to be reproducible and readily shared. As part of this, an
 
 Big Data folder - a folder on a shared file server, outside the manuscript project folder, that can be accessed by all team members; Large, relatively unportable datasets, such as satellite data, are stored here, and accompanied by metadata.
 
-Manuscript  -- |--- data        (for raw data specific to the manuscript, accompanied by metadata,
-				 soft links to data in the big data folder can also be placed here) 
-
-		|--- functions (for function scripts shareable among multiple analysis scripts)
-
-  	|--- analysis (for data processing and analysis scripts)
-
-	|--- output    (for derived data created by the data processing/analysis scripts)
-
-	|--- results    (for figures/tables saved by analysis scripts)
-
-		|--- doc         (for manuscript text and project documentation)
+Manuscript
+- data (for raw data specific to the manuscript, accompanied by metadata, soft links to data in the big data folder can also be placed here) 
+- functions (for function scripts shareable among multiple analysis scripts)
+- analysis (for data processing and analysis scripts)
+- output (for derived data created by the data processing/analysis scripts)
+- results (for figures/tables saved by analysis scripts)
+- doc (for manuscript text and project documentation)
 
 Manuscript analyses are also meant to be reproducible by others. To accomplish this, we will preserve our raw data files without directly manipulating them and document our data and analysis steps through the use of an open-source scripting language such as R. Raw data that are only used in the manuscript go into the data folder. The manuscript data folder can also include soft links to folders outside of the project where large data files are stored and shared among multiple manuscripts. 
 
@@ -58,16 +53,15 @@ Paper data should also be transcribed into tabular data as soon as possible. Tra
 Tabular data should be stored in Tidy data format: columns as data attributes and rows as data records, data are sortable, no blank cells (use 0 or NA as appropriate), attributes about data are stored as variables in text columns (not through color coding, etc). ALWAYS store a version of your data as a .csv file (never just .xlsx, even if you use Excel or similar to enter data).
 
 Data types we use in the Lab include:
-
-Tablar (csv, txt)
-GeoTIFFs
-HDF5
-netCDF
-LAS/LAZ
-Shapefiles 
-jpegs
-Portable Document Format (PDF)
-Others???
+- Tablar (csv, txt)
+- GeoTIFFs
+- HDF5
+- netCDF
+- LAS/LAZ
+- Shapefiles 
+- jpegs
+- TIFFS
+- Portable Document Format (PDF)
 
 Members of the Lab have various expertise in these data types. Always ask around if you need help with a new data type!
 
