@@ -74,15 +74,23 @@ Members of the Lab have various expertise in these data types. Always ask around
 
 Use file names that are cross platform:
 Do not use special characters other than dash/hyphen (-), underscore (_), and period/dot (.).  Keep file names short, definitely not longer than 143 characters.  (Long file names may mean you are trying to store data in them.  See below.)
+
 Always include the 1-3 character file extension (e.g. ‘.txt’).
+
 Avoid extra dots in file names when possible.  (Some outside files will come with more than on dot in their names and that's OK.)
-Do not store data in file names:
+
+Do not store data in file names:  
 Filenames are prone to being changed so no critical information should be stored only in a file’s name.  For example, store the date of collection for a set of data in the file, not just in the file name.
+
 If a file was obtained from elsewhere and lacks information internally to unambiguously identify it associate the appropriate metadata with the file (see metadata)
-Chose wisely:
+
+Chose wisely:  
 Assume others will look at your work.  Will they be able to interpret your files names?
+
 Use named directories to organize files and give them context (rather than just using longer names.)
+
 Using case in file names to increase readability is fine but do not rely on case alone to distinguish between files.
+
 Use whitespace carefully.  Spaces in file names may be fine for human readable files but can cause issues on the command line.
 
 #### Metadata:
