@@ -21,17 +21,17 @@ This plan sets clear general guidelines for handling data within our lab group a
 
 ### Roles & Responsibilities
 
-The lab Principal Investigator (PI; Dr. ___) is solely responsible for the quality and direction of research in the lab. While different projects have different leadership structures, if the PI is the lead on a grant that is funding the research, then the PI is responsible for reporting progress, products, data storage, etc, to the funders. As such, any new project should begin with a discussion with the PI about data storage, data security (if relevant), project objectives, and reporting requirements. As a data driven lab group, data management paramount to our research success, so adhering to the following guidelines is essential. Questions about data and methods should be directed to the PI as soon as possible.
+The lab Principal Investigator (PI; Dr. EcoForce) is solely responsible for the quality and direction of research in the lab. While different projects have different leadership structures, if the PI is the lead on a grant that is funding the research, then the PI is responsible for reporting progress, products, data storage, etc, to the funders. As such, any new project should begin with a discussion with the PI about data storage, data security (if relevant), project objectives, and reporting requirements. As a data driven lab group, data management paramount to our research success, so adhering to the following guidelines is essential. Questions about data and methods should be directed to the PI as soon as possible.
 
 ### Reproducible Research Analysis Guidelines
 
 Our research is meant to be reproducible and readily shared. As part of this, analytical projects are meant to be easily portable to new computational environments and will often be archived for the public following publication. To make our manuscript analyses portable, we should organize the data and files associated with a manuscript into hierarchical folders that can be referenced with relative paths. To facilitate this, please use a consistent hierarchical folder structure as follows:
 
 #### Manuscript Folder Structure:
-Big Data folder:
+##### Big Data folder:
 - A folder on a shared file server, outside the manuscript project folder, that can be accessed by all team members. Large, relatively unportable datasets, such as satellite data, are stored here, and accompanied by metadata.
 
-Manuscript:
+##### Manuscript:
 - data: raw data specific to the manuscript, with metadata, and soft links to data in the big data folder
 - functions: function scripts shareable among multiple analysis scripts
 - analysis: data processing and analysis scripts
@@ -49,7 +49,7 @@ Analyses are meant to be portable among computational environments (HPCCs, cloud
 
 #### Data Types and Formats:
 
-In the lab we work with *new data* we generate, *shared data* we get from collaborators, and *open data* we access off the web. In general we assume open data is archived and backed up elsewhere and does not need to be re-archived by us, but new data and shared data should be treated as though they have no other backup (see Data Backups & Versioning).
+In the lab we work with *new data* we generate, *shared data* we get from collaborators, and *open data* we access off the web. In general we assume open data is archived and backed up elsewhere and does not need to be re-archived by us, but new data and shared data should be treated as though they have no other backup (see [Data Backups & Versioning](https://github.com/JoshuaRady/FOSS_EcoForce5_DMP/blob/main/README.md#data-backups-and-versioning)).
 
 Paper data on data sheets or in notebooks should be backed up electronically by photographing/photocopying the data sheets and storing the copies on the lab server. This should be done as soon as possible after data collection to avoid data loss. The prefered format for scanned materials is PDF or for images lossless compressed TIFFs with a resolution of no less than 300 dpi.
 
@@ -79,12 +79,12 @@ Always include the 1-3 character file extension (e.g. ‘.txt’).
 
 Avoid extra dots in file names when possible.  (Some outside files will come with more than on dot in their names and that's OK.)
 
-Do not store data in file names:  
+##### Do not store data in file names:  
 Filenames are prone to being changed so no critical information should be stored only in a file’s name.  For example, store the date of collection for a set of data in the file, not just in the file name.
 
 If a file was obtained from elsewhere and lacks information internally to unambiguously identify it associate the appropriate metadata with the file (see metadata)
 
-Chose wisely:  
+##### Chose wisely:  
 Assume others will look at your work.  Will they be able to interpret your files names?
 
 Use named directories to organize files and give them context (rather than just using longer names.)
