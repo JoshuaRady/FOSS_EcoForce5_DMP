@@ -28,19 +28,17 @@ Big Data folder - a folder on a shared file server, outside the manuscript proje
 
 Manuscript folder structure:
 
-.
+├── data: raw data specific to the manuscript, accompanied by metadata, as well as soft links to data in the big data folder
 
-├── data: for raw data specific to the manuscript, accompanied by metadata, soft links to data in the big data folder can also be placed here
+├── functions: function scripts shareable among multiple analysis scripts
 
-├── functions: for function scripts shareable among multiple analysis scripts
+├── analysis: data processing and analysis scripts
 
-├── analysis: for data processing and analysis scripts
+├── output: derived data created by the data processing/analysis scripts
 
-├── output: for derived data created by the data processing/analysis scripts
+├── results: figures/tables saved by analysis scripts
 
-├── results: for figures/tables saved by analysis scripts
-
-├── doc: for manuscript text and project documentation
+├── doc: manuscript text and project documentation
 
 Manuscript analyses are also meant to be reproducible by others. To accomplish this, we will preserve our raw data files without directly manipulating them and document our data and analysis steps through the use of an open-source scripting language such as R. Raw data that are only used in the manuscript go into the data folder. The manuscript data folder can also include soft links to folders outside of the project where large data files are stored and shared among multiple manuscripts.
 
