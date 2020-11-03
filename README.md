@@ -24,19 +24,19 @@ The lab Principal Investigator (PI; Dr. ___) is solely responsible for the quali
 
 Our research is meant to be reproducible and readily shared. As part of this, analytical projects are meant to be easily portable to new computational environments and will often be archived for the public following publication. To make our manuscript analyses portable, we should organize the data and files associated with a manuscript into hierarchical folders that can be referenced with relative paths. To facilitate this, please use a consistent hierarchical folder structure as follows:
 
+####Manuscript folder structure:
 Big Data folder:
 - A folder on a shared file server, outside the manuscript project folder, that can be accessed by all team members. Large, relatively unportable datasets, such as satellite data, are stored here, and accompanied by metadata.
 
 Manuscript:
-- data  
-For raw data specific to the manuscript, accompanied by metadata, soft links to data in the big data folder can also be placed here.
-- functions (for function scripts shareable among multiple analysis scripts)
-- analysis (for data processing and analysis scripts)
-- output (for derived data created by the data processing/analysis scripts)
-- results (for figures/tables saved by analysis scripts)
-- doc (for manuscript text and project documentation)
+- data: raw data specific to the manuscript, with metadata, and soft links to data in the big data folder
+- functions: function scripts shareable among multiple analysis scripts
+- analysis: data processing and analysis scripts
+- output: derived data created by the data processing/analysis scripts
+- results: figures/tables saved by analysis scripts
+- doc: manuscript text and project documentation
 
-Manuscript analyses are also meant to be reproducible by others. To accomplish this, we will preserve our raw data files without directly manipulating them and document our data and analysis steps through the use of an open-source scripting language such as R. Raw data that are only used in the manuscript go into the data folder. The manuscript data folder can also include soft links to folders outside of the project where large data files are stored and shared among multiple manuscripts. 
+Manuscript analyses are also meant to be reproducible by others. To accomplish this, we will preserve our raw data files without directly manipulating them and document our data and analysis steps through the use of an open-source scripting language such as R. Raw data that are only used in the manuscript go into the data folder. The manuscript data folder can also include soft links to folders outside of the project where large data files are stored and shared among multiple manuscripts.
 
 When creating data processing and analysis scripts, the purpose of each analysis needs to be clear. Include comments at the top of each script describing the general purpose of the analysis/data steps. In the body of the script, code should be sufficiently commented so that the purpose of code lines are clear. While you might work on your manuscript project folders on your personal computer, these should be backed up to the lab server periodically (see [Backups](https://github.com/JoshuaRady/FOSS_EcoForce5_DMP/#data-backups-and-versioning)), and especially at the conclusion of the project before leaving the lab. 
 
@@ -46,11 +46,11 @@ Analyses are meant to be portable among computational environments (HPCCs, cloud
 
 #### Data types and format
 
-In the lab we work with *new data* we generate, *shared data* we get from collaborators, and *open data* we access off the web. In general we assume open data is archived and backed up elsewhere and does not need to be re-archived by us, but new data and shared data should be treated as though they have no other backup (see Data Backups & Versioning). 
+In the lab we work with *new data* we generate, *shared data* we get from collaborators, and *open data* we access off the web. In general we assume open data is archived and backed up elsewhere and does not need to be re-archived by us, but new data and shared data should be treated as though they have no other backup (see Data Backups & Versioning).
 
 Paper data on data sheets or in notebooks should be backed up electronically by photographing/photocopying the data sheets and storing the copies on the lab server. This should be done as soon as possible after data collection to avoid data loss. The prefered format for scanned materials is PDF or for images lossless compressed TIFFs with a resolution of no less than 300 dpi.
 
-Paper data should also be transcribed into tabular data as soon as possible. Transcribed data should be checked for data error entries directly after transcription. 
+Paper data should also be transcribed into tabular data as soon as possible. Transcribed data should be checked for data error entries directly after transcription.
 
 Tabular data should be stored in Tidy data format: columns as data attributes and rows as data records, data are sortable, no blank cells (use 0 or NA as appropriate), attributes about data are stored as variables in text columns (not through color coding, etc). ALWAYS store a version of your data as a .csv file (never just .xlsx, even if you use Excel or similar to enter data).
 
@@ -60,7 +60,7 @@ Data types we use in the Lab include:
 - HDF5
 - netCDF
 - LAS/LAZ
-- Shapefiles 
+- Shapefiles
 - jpegs
 - TIFFS
 - Portable Document Format (PDF)
@@ -76,7 +76,7 @@ Avoid extra dots in file names when possible.  (Some outside files will come wit
 Do not store data in file names:
 Filenames are prone to being changed so no critical information should be stored only in a file’s name.  For example, store the date of collection for a set of data in the file, not just in the file name.
 If a file was obtained from elsewhere and lacks information internally to unambiguously identify it associate the appropriate metadata with the file (see metadata)
-Choose wisely:
+Chose wisely:
 Assume others will look at your work.  Will they be able to interpret your files names?
 Use named directories to organize files and give them context (rather than just using longer names.)
 Using case in file names to increase readability is fine but do not rely on case alone to distinguish between files.
@@ -95,10 +95,8 @@ ALL *NEW OR SHARED DATA* MUST BE BACKED UP WEEKLY if it is actively being manipu
 Data represents time, energy, money and progress.  Don’t lose it!
 
 All computers, including any personal computer used for lab research, should employ a multiple tiered backup system.
-- Local backups:  
-All computers must have at least one backup drive that automatically archives the computer’s data directory.  For desktop machines backups should run at least hourly.  For laptops you should connect to your drive to backup at least daily.
-- Cloud backups:  
-All computers must also perform automatic backups to (a/our) cloud backup service.
+- Local backups:  All computers must have at least one backup drive that automatically archives the computer’s data directory.  For desktop machines backups should run at least hourly.  For laptops you should connect to your drive to backup at least daily.
+- Cloud backups:  All computers must also perform automatic backups to (a/our) cloud backup service.
 
 #### Data Archive
 
