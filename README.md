@@ -55,7 +55,7 @@ Paper data on data sheets or in notebooks should be backed up electronically by 
 
 Paper data should also be transcribed into tabular data as soon as possible. Transcribed data should be checked for data error entries directly after transcription.
 
-Tabular data should be stored in Tidy data format: columns as data attributes and rows as data records, data are sortable, no blank cells (use 0 or NA as appropriate), attributes about data are stored as variables in text columns (not through color coding, etc). ALWAYS store a version of your data as a .csv file (never just .xlsx, even if you use Excel or similar to enter data).
+Tabular data should be stored in Tidy data format: columns as data attributes and rows as data records, data are sortable, no blank cells (use 0 for values and -9999 or NA as appropriate for true missing values), attributes about data are stored as variables in text columns (not through color coding, etc). ALWAYS store a version of your data as a .csv file (never just .xlsx, even if you use Excel or similar to enter data).
 
 Data types we use in the Lab include:
 - Tablar (csv, txt)
