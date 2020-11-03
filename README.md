@@ -28,7 +28,7 @@ Big Data folder - a folder on a shared file server, outside the manuscript proje
 
 Manuscript folder structure:
 
-├── data: raw data specific to the manuscript, accompanied by metadata, as well as soft links to data in the big data folder
+├── data: raw data specific to the manuscript, with metadata, and soft links to data in the big data folder
 
 ├── functions: function scripts shareable among multiple analysis scripts
 
