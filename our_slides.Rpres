@@ -1,0 +1,21 @@
+Data Management Plan: a lab guide
+============================
+  transition: none
+css: custom.css
+autosize: true
+
+Kyla Dahlin, Joshua Rady, Debjani Sihi, R. Quinn Thomas, and Jessica L. O'Connell
+
+
+
+Data management plans
+==============
+* Needed to establish proper procedures for data management, analysis and storage in a collaborative group
+* Assist with making the research reproducible and portable
+* Facilitate archiving the data and transitions in lab membership
+
+Data management sections
+==============
+* General principles
+* Reproducible Research guidelines for analysis
+* Data standards and practices
