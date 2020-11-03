@@ -74,7 +74,7 @@ Avoid extra dots in file names when possible.  (Some outside files will come wit
 Do not store data in file names:
 Filenames are prone to being changed so no critical information should be stored only in a file’s name.  For example, store the date of collection for a set of data in the file, not just in the file name.
 If a file was obtained from elsewhere and lacks information internally to unambiguously identify it associate the appropriate metadata with the file (see metadata)
-Chose wisely:
+Choose wisely:
 Assume others will look at your work.  Will they be able to interpret your files names?
 Use named directories to organize files and give them context (rather than just using longer names.)
 Using case in file names to increase readability is fine but do not rely on case alone to distinguish between files.
@@ -93,8 +93,10 @@ ALL *NEW OR SHARED DATA* MUST BE BACKED UP WEEKLY if it is actively being manipu
 Data represents time, energy, money and progress.  Don’t lose it!
 
 All computers, including any personal computer used for lab research, should employ a multiple tiered backup system.
-- Local backups:  All computers must have at least one backup drive that automatically archives the computer’s data directory.  For desktop machines backups should run at least hourly.  For laptops you should connect to your drive to backup at least daily.
-- Cloud backups:  All computers must also perform automatic backups to (a/our) cloud backup service.
+- Local backups:  
+All computers must have at least one backup drive that automatically archives the computer’s data directory.  For desktop machines backups should run at least hourly.  For laptops you should connect to your drive to backup at least daily.
+- Cloud backups:  
+All computers must also perform automatic backups to (a/our) cloud backup service.
 
 #### Data Archive
 
