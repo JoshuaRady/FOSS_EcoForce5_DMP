@@ -5,7 +5,7 @@ Started: 11/3/2020
 ------------------------------------------------------------------------------------------------ -->
 
 <!-- Header: -->
-<img src="https://github.com/JoshuaRady/FOSS_EcoForce5_DMP/blob/master/images/EcoForce5_Header.png">
+<img src="/images/EcoForce5_Header.png">
 
 # EcoForce5 Reproducibility Lab
 
