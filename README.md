@@ -4,6 +4,9 @@ EcoForce5 Team
 Started: 11/3/2020
 ------------------------------------------------------------------------------------------------ -->
 
+<!-- Header: -->
+<img src="https://github.com/JoshuaRady/FOSS_EcoForce5_DMP/blob/master/images/EcoForce5_Header.png">
+
 # EcoForce5 Reproducibility Lab
 
 Welcome to the lab!  This guide explains how we work with data in our lab team, but it is not just a set of rules.  For us data is a central part of the science that we do.  We strive for a culture that treats data in a way that will allow it to be as usefully as possible to ourselves and others.
